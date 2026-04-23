@@ -1,4 +1,12 @@
 public class DynamicStringList implements StringList {
+    int size;
+    int capacity;
+
+    public DynamicStringList(int size, int capacity) {
+        this.size = size;
+        this.capacity = capacity;
+    }
+
     public String get(int index) {
         return "";
     }
@@ -16,10 +24,10 @@ public class DynamicStringList implements StringList {
     }
 
     public int size() {
-        return 0;
+        return size;
     }
 
     public int capacity() {
-        return 1;
+        return capacity;
     }
 }
